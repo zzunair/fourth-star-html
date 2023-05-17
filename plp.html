@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" type="image/x-icon" href="./assets/images/product-img.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth_Star-PLp</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/plp.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav class="navbar">
+            <div class="container-section">
+                <div class="nav-flex  d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="nav-brand me-4">
+                        <a href="./index.html">
+                            <img class="logo" src="./assets/images/logo.png">
+                        </a>
+                    </div>
+                    <form action="" class="d-flex nav-search-bar me-auto mt-md-0 mt-3">
+                        <input type="search" class="nav-search-input me-2">
+                        <img class="search-icon" src="./assets/images/search.png">
+                        <button class="nav-search-btn btn">Search</button>
+                    </form>
+                    <div class="cart-content">
+                        <img class="cart-icon" src="./assets/images/cart.png">
+                        <div class="cart-counter-number">
+                            <span>12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-section">
+        <div class="sort-products-section">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="sort-product-tabs">
+                        <button type="button" data-filter="*" class="active btn">All</button>
+                        <button type="button" data-filter=".promotions" class="btn">Promotions</button>
+                        <button type="button" data-filter=".clothes" class="btn">Clothes</button>
+                        <button type="button" data-filter=".spaceships" class="btn">Spaceships</button>
+                        <button type="button" data-filter=".pets" class="btn">Pets</button>
+                        <button type="button" data-filter=".boosters" class="btn">Boosters</button>
+                        <button type="button" data-filter=".tickets" class="btn">Tickets</button>
+                        <button type="button" data-filter=".furniture" class="btn">Furniture</button>
+                        <button type="button" data-filter=".others" class="btn">Other</button>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="sort-product-wrapper">
+                        <div class="sort-product-results">
+                            <p class="sort-rsult-text">Results for <span>Ragalia Suit</span></p>
+                            <span class="sort-total-items">17 Items</span>
+                        </div>
+                        <div class="sort-dropdown">
+                            <span class="sort-by-text">Sort By:</span>
+                            <select class="filters-select">
+                                <option>Relevance</option>
+                                <option>All</option>
+                                <option>Promotions</option>
+                                <option>Clothes</option>
+                                <option>Spaceships</option>
+                                <option>Pets</option>
+                                <option>Boosters</option>
+                                <option>Tickets</option>
+                            </select>
+                        </div>
+                        <div class="sort-product-main" id="sortproduct-list">
+                            <div class="sort-product-items promotions">
+                                <div class="img-box deluxe-border img-deluxe-layer">
+                                    <img src="./assets/images/product-img.png" class="sort-product-img">
+                                </div>
+                                <div class="sort-product-detail">
+                                    <div class="product-btns">
+                                        <button class="btn deluxe-btn">Deluxe</button>
+                                    </div>
+                                    <p class="product-title">Ragalia Space Suit Complete Set with Random Pet</p>
+                                    <p class="product-price">$19.90</p>
+                                </div>
+                            </div>
+                            <div class="sort-product-items clothes">
+                                <div class="img-box standard-border img-standard-layer ">
+                                    <img src="./assets/images/product-img.png" class="sort-product-img">>
+                                    <button class="btn product-off-btn">-20%</button>
+                                </div>
+                                <div class="sort-product-detail">
+                                    <div class="product-btns d-f">
+                                        <button class="btn deluxe-btn">Deluxe</button>
+                                        <button class="btn hot-btn">Hot</button>
+                                    </div>
+                                    <p class="product-title">Ragalia Space Suit Complete Set with Random Pet</p>
+                                    <p class="product-price">$15.90</p>
+                                    <p class="product-before-price">$19.90</p>
+                                </div>
+                            </div>
+                            <div class="sort-product-items promotions">
+                                <div class="img-box deluxe-border img-deluxe-layer">
+                                    <img src="./assets/images/product-img.png" class="sort-product-img">
+                                </div>
+                                <div class="sort-product-detail">
+                                    <div class="product-btns">
+                                        <button class="btn deluxe-btn">Deluxe</button>
+                                    </div>
+                                    <p class="product-title">Ragalia Space Suit Complete Set with Random Pet</p>
+                                    <p class="product-price">$19.90</p>
+                                </div>
+                            </div>
+                            <div class="sort-product-items boosters">
+                                <div class="img-box standard-border img-standard-layer ">
+                                    <img src="./assets/images/product-img.png" class="sort-product-img">
+                                    <button class="btn product-off-btn">-20%</button>
+                                </div>
+                                <div class="sort-product-detail">
+                                    <div class="product-btns d-f">
+                                        <button class="btn deluxe-btn">Deluxe</button>
+                                        <button class="btn hot-btn">Hot</button>
+                                    </div>
+                                    <p class="product-title">Ragalia Space Suit Complete Set with Random Pet</p>
+                                    <p class="product-price">$15.90</p>
+                                    <p class="product-before-price">$19.90</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="footer-content">
+                        <h2 class="footer-heading">Company</h2>
+                        <a href="#">
+                            <img src="./assets/images/logo.png" class="footer-logo">
+                        </a>
+                        <p class="footer-about-company">Headquarters of the cluster organization: Nanoprogress, z.s.,
+                            Nova 306, 530 09 Pardubice Prague Office: Nanoprogress, z.s., Ukrajinska 1488/10, 101 00
+                            Praha 10</p>
+                        <p class="footer-detail">
+                            <i class="fa-solid fa-envelope contact-gmail"></i>abc@gmail.com
+                        </p>
+                        <p class="footer-detail">
+                            <i class="fa-solid fa-phone-flip contact-phone"></i>+01 335 633 77
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-md-0 mt-5">
+                    <div class="footer-content">
+                        <h3 class="footer-heading">Useful Links</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item"><a href="#" class="footer-link">About Us</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Contact Us</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Terms & Conditions</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Returns & Exchange</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Shipping & Delivery</a></li>
+                            <li class="footer-item"><a href="#" class="footer-link">Private Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 mt-md-0 mt-5">
+                    <div class="footer-content">
+                        <h3 class="footer-heading">Follow Us</h3>
+                        <ul class="social-list">
+                            <li class="social-icons-item"><a href="#" class="social-link"><i
+                                        class="fa-brands fa-linkedin-in footer-icons"></i></a></li>
+                            <li class="social-icons-item"><a href="#" class="social-link"><i
+                                        class="fa-brands fa-facebook-f footer-icons"></i></a></li>
+                            <li class="social-icons-item"><a href="#" class="social-link"><i
+                                        class="fa-brands fa-twitter footer-icons"></i></a></li>
+                            <li class="social-icons-item"><a href="#" class="social-link"><i
+                                        class="fa-brands fa-instagram footer-icons"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
