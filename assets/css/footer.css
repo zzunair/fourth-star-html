@@ -13,6 +13,7 @@
 
 .footer {
     margin-top: 100px;
+    padding-bottom: 70px;
 }
 
 .footer .footer-content .footer-heading {
@@ -56,7 +57,7 @@
     margin-top: 10px;
 }
 
-.footer .footer-list { 
+.footer .footer-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -101,11 +102,16 @@
     color: var(--whitegrey);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
     .footer .footer-content .footer-heading {
         margin-bottom: 20px;
     }
+
     .footer .footer-content .footer-logo {
         width: 250px;
+    }
+
+    .footer .footer-follow {
+        justify-content: flex-start !important;
     }
 }

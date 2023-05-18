@@ -37,15 +37,14 @@
                     </div>
                     <form action="" class="d-flex nav-search-bar me-auto mt-md-0 mt-3">
                         <input type="search" class="nav-search-input me-2">
-                        <img class="search-icon" src="./assets/images/search.png">
                         <button class="nav-search-btn btn">Search</button>
                     </form>
-                    <div class="cart-content">
+                    <a href="#" class="cart-content">
                         <img class="cart-icon" src="./assets/images/cart.png">
-                        <div class="cart-counter-number">
+                        <span class="cart-counter-number">
                             <span>12</span>
-                        </div>
-                    </div>
+                        </span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -80,17 +79,26 @@
                                         <div class="cart-close">
                                             <i class="fa-solid fa-xmark cart-close-icon"></i>
                                         </div>
-                                        <div class="cart-item-img-box standard-border img-standard-layer">
+                                        <a href="#" class="cart-item-img-box standard-border img-standard-layer">
                                             <img src="./assets/images/product-img.png" class="cart-img">
-                                        </div>
-                                        <h4 class="cart-item-title">Ragalia Space Suit Complete Set</h4>
+                                        </a>
+                                        <a href="#" class="cart-item-title">Ragalia Space Suit Complete Set</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-3">
-                                    <div class="cart-quantity-content">
-                                        <img src="./assets/images/minus.png" class="plus">
-                                        <span class="quantity-nmb">1</span>
-                                        <img src="./assets/images/plus.png" class="minus">
+                                    <div class="cart-quantity-content input-group">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-subtract" type="button">
+                                                <i class="fa-solid fa-minus minus"></i>
+                                            </button>
+                                        </span>
+                                        <input type="number" class="form-control no-padding text-center item-quantity"
+                                            value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-add" type="button">
+                                                <i class="fa-solid fa-plus plus"></i>
+                                            </button>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-2 ps-0 ">
@@ -105,17 +113,26 @@
                                         <div class="cart-close">
                                             <i class="fa-solid fa-xmark cart-close-icon"></i>
                                         </div>
-                                        <div class="cart-item-img-box standard-border img-standard-layer">
+                                        <a href="#" class="cart-item-img-box standard-border img-standard-layer">
                                             <img src="./assets/images/product-img.png" class="cart-img">
-                                        </div>
-                                        <h4 class="cart-item-title">Ragalia Space Suit Complete Set</h4>
+                                        </a>
+                                        <a href="#" class="cart-item-title">Ragalia Space Suit Complete Set</a>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-3">
-                                    <div class="cart-quantity-content">
-                                        <img src="./assets/images/minus.png" class="plus">
-                                        <span class="quantity-nmb">1</span>
-                                        <img src="./assets/images/plus.png" class="minus">
+                                    <div class="cart-quantity-content input-group">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-subtract" type="button">
+                                                <i class="fa-solid fa-minus minus"></i>
+                                            </button>
+                                        </span>
+                                        <input type="number" class="form-control no-padding text-center item-quantity"
+                                            value="1">
+                                        <span class="input-group-btn">
+                                            <button class="btn btn-default btn-add" type="button">
+                                                <i class="fa-solid fa-plus plus"></i>
+                                            </button>
+                                        </span>
                                     </div>
                                 </div>
                                 <div class="col-md-2 col-2 ps-0">
@@ -166,47 +183,26 @@
                 <p class="promotion-off-text">Get $10 off your first purchase</p>
             </div>
             <div class="continue-shopping-content">
-                <a href="#">
+                <a href="#" class="continue-shopping-text">
                     <i class="fa-solid fa-chevron-left arrow-back"></i>
+                    Continue Shopping
                 </a>
-                <p class="continue-shopping-text">Continue Shopping</p>
+                <!-- <p class="continue-shopping-text">Continue Shopping</p> -->
             </div>
         </div>
 
         <!-- footer -->
         <footer class="footer">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <div class="footer-content">
                         <h2 class="footer-heading">Company</h2>
                         <a href="#">
                             <img src="./assets/images/logo.png" class="footer-logo">
                         </a>
-                        <p class="footer-about-company">Headquarters of the cluster organization: Nanoprogress, z.s.,
-                            Nova 306, 530 09 Pardubice Prague Office: Nanoprogress, z.s., Ukrajinska 1488/10, 101 00
-                            Praha 10</p>
-                        <p class="footer-detail">
-                            <i class="fa-solid fa-envelope contact-gmail"></i>abc@gmail.com
-                        </p>
-                        <p class="footer-detail">
-                            <i class="fa-solid fa-phone-flip contact-phone"></i>+01 335 633 77
-                        </p>
                     </div>
                 </div>
-                <div class="col-lg-3 mt-md-0 mt-5">
-                    <div class="footer-content">
-                        <h3 class="footer-heading">Useful Links</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item"><a href="#" class="footer-link">About Us</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Contact Us</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Terms & Conditions</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Returns & Exchange</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Shipping & Delivery</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Private Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-md-0 mt-5">
+                <div class="col-sm-6 mt-sm-0 mt-5 footer-follow d-flex justify-content-end">
                     <div class="footer-content">
                         <h3 class="footer-heading">Follow Us</h3>
                         <ul class="social-list">

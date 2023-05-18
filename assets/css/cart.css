@@ -102,18 +102,76 @@
     font-family: "Barlow--Normal-Bold";
     color: var(--whitegrey);
     margin-left: 24px;
+    text-decoration: none;
 }
 
 .shipping-cart .cart-items-content .cart-quantity-content {
     display: flex;
-    gap: 45px;
+    gap: 17px;
     align-items: center;
+    max-width: 143px;
 }
 
 .shipping-cart .cart-items-content .cart-quantity-content .quantity-nmb {
     font-size: 30px;
     font-weight: 600;
     color: var(--whitegrey);
+}
+
+.cart-quantity-content .input-group-btn .btn-subtract {
+    padding: 0;
+    box-shadow: unset;
+}
+
+.cart-quantity-content .input-group-btn .btn-subtract .minus {
+    line-height: 0;
+    font-size: 24px;
+    border: 2px solid var(--whitegrey);
+    color: var(--whitegrey);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.cart-quantity-content .input-group-btn .btn-add {
+    box-shadow: unset;
+    padding: 0;
+}
+
+.cart-quantity-content .input-group-btn .btn-add .plus {
+    line-height: 0;
+    font-size: 24px;
+    border: 2px solid var(--whitegrey);
+    color: var(--whitegrey);
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+.cart-quantity-content .item-quantity{
+    max-width: 50px;
+    font-size: 22px;
+    background: transparent;
+    color: var(--whitegrey);
+    border: 0;
+    font-weight: 600;
+    padding: 0;
+}
+
+.cart-quantity-content .item-quantity:focus {
+    color: var(--whitegrey);
+    background-color: transparent;
+    border: none;
+    outline: 0;
+    box-shadow: none;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
 }
 
 .shipping-cart .cart-items-content .cart-price {
@@ -276,20 +334,22 @@
 }
 
 .continue-shopping-content {
-    display: flex;
-    gap: 28px;
-    align-items: center;
     margin-top: 90px;
 }
 
 .continue-shopping-content .continue-shopping-text {
     color: var(--whitegrey);
+    display: flex;
+    align-items: center;
+    gap: 25px;
     font-size: 24px;
     font-weight: 600;
+    text-decoration: none;
 }
 
 .continue-shopping-content .arrow-back {
     color: var(--whitegrey);
+    font-size: 20px;
 }
 .shipping-cart .cart-items-content .cart-quantity-content .plus {
     cursor: pointer;
@@ -298,7 +358,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
     .shipping-cart-container .shipping-cart .shipping-cart-head .cart-heading {
         font-size: 27px;
     }
@@ -325,7 +385,7 @@
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 991.98px) {
     .shipping-cart-container .shipping-cart .shipping-cart-head .cart-heading {
         font-size: 24px;
     }
@@ -370,7 +430,7 @@
     }
 }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 767.98px) {
     .shipping-cart-container .shipping-cart {
         padding-right: 0;
     }
@@ -380,7 +440,7 @@
     }
 }
 
-@media screen and (max-width: 762px) {
+@media screen and (max-width: 767.98px) {
     .shipping-cart-container .shipping-cart .cart-items-head .cart-items-edtail-text {
         font-size: 14px;
     }
@@ -397,12 +457,12 @@
     .shipping-cart .cart-items-content .cart-quantity-content {
         gap: 13px;
     }
-    .shipping-cart .cart-items-content .cart-quantity-content .plus {
+    /* .shipping-cart .cart-items-content .cart-quantity-content .plus {
         width: 23px;
     }
     .shipping-cart .cart-items-content .cart-quantity-content .minus {
         width: 23px;
-    }
+    } */
     .shipping-cart .cart-items-content .cart-quantity-content .quantity-nmb {
         font-size: 18px;
     }
@@ -423,5 +483,18 @@
     }
     .promo-code-content .promo-code-form .promo-code-label {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 767.98px) {
+    .cart-quantity-content .input-group-btn .btn-subtract .minus {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
+    }
+    .shipping-cart .cart-items-content .cart-quantity-content .plus {
+        width: 25px;
+        height: 25px;
+        font-size: 14px;
     }
 }

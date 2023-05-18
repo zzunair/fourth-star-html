@@ -8,9 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fourth_Star-Home</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
+    <link rel="stylesheet" href="./assets/css/homeFilterProduct.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/homeSlider.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -38,15 +39,14 @@
                     </div>
                     <form action="" class="d-flex nav-search-bar me-auto mt-md-0 mt-3">
                         <input type="search" class="nav-search-input me-2">
-                        <img class="search-icon" src="./assets/images/search.png">
                         <button class="nav-search-btn btn">Search</button>
                     </form>
-                    <div class="cart-content">
+                    <a href="#" class="cart-content">
                         <img class="cart-icon" src="./assets/images/cart.png">
-                        <div class="cart-counter-number">
+                        <span class="cart-counter-number">
                             <span>12</span>
-                        </div>
-                    </div>
+                        </span>
+                    </a>
                 </div>
             </div>
         </nav>
@@ -54,43 +54,43 @@
 
     <!-- header end -->
     <!-- Banner start -->
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class="carousel slide mt-5" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./assets/images/main-banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption container d-none d-md-block">
+                <img src="./assets/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption container">
                     <h5 class="banner-title"><span>-20%</span> on Spaceships</h5>
                     <a href="#">
                         <button class="btn banner-shop-btn">Shop Now</button>
                     </a>
                 </div>
-                <!-- <div class="container banner-main-text">
+                <!-- <div class="banner-main-text">
                     <h2 class="banner-prepare-heading">Prepare your</h2>
                     <h2 class="banner-fleet-heading">Fleet</h2>
                 </div> -->
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/main-banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="./assets/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
                     <h5 class="banner-title"><span>-20%</span> on Spaceships</h5>
                     <a href="#">
                         <button class="btn banner-shop-btn">Shop Now</button>
                     </a>
                 </div>
-                <!-- <div class="container banner-main-text">
+                <!-- <div class="banner-main-text">
                     <h2 class="banner-prepare-heading">Prepare your</h2>
                     <h2 class="banner-fleet-heading">Fleet</h2>
                 </div> -->
             </div>
             <div class="carousel-item">
-                <img src="./assets/images/main-banner.png" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
+                <img src="./assets/images/banner.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
                     <h5 class="banner-title"><span>-20%</span> on Spaceships</h5>
                     <a href="#">
                         <button class="btn banner-shop-btn">Shop Now</button>
                     </a>
                 </div>
-                <!-- <div class="container banner-main-text">
+                <!-- <div class="banner-main-text">
                     <h2 class="banner-prepare-heading">Prepare your</h2>
                     <h2 class="banner-fleet-heading">Fleet</h2>
                 </div> -->
@@ -116,7 +116,7 @@
                 </div>
             </div>
 
-            <div class="row justify-content-center product-wrapper g-4" id="product-list">
+            <div class="row product-wrapper g-4" id="product-list">
                 <div class="col-lg-3 col-md-6 promotions">
                     <div class="product-item">
                         <div class="product-img-box img-deluxe-layer deluxe-border">
@@ -136,7 +136,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -160,7 +160,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn premium-btn">Premium</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$1359.90</span>
                         </div>
                     </div>
@@ -185,8 +185,9 @@
                         </div>
                         <div class="product-content">
                             <button class="btn standard-btn">Standard</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
-                            <span class="product-price">$15.90</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
+                            <span class="product-price d-block">$15.90</span>
+                            <span class="product-before-price">$19.90</span>
                         </div>
                     </div>
                 </div>
@@ -209,7 +210,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -233,7 +234,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -257,7 +258,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn premium-btn">Premium</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$1359.90</span>
                         </div>
                     </div>
@@ -281,7 +282,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn standard-btn">Standard</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$15.90</span>
                         </div>
                     </div>
@@ -305,7 +306,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -329,7 +330,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -353,7 +354,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn premium-btn">Premium</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$1359.90</span>
                         </div>
                     </div>
@@ -376,7 +377,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn standard-btn">Standard</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$15.90</span>
                         </div>
                     </div>
@@ -399,7 +400,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -422,7 +423,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -445,7 +446,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn premium-btn">Premium</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$1359.90</span>
                         </div>
                     </div>
@@ -468,7 +469,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn standard-btn">Standard</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$15.90</span>
                         </div>
                     </div>
@@ -491,7 +492,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -514,7 +515,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn deluxe-btn">Deluxe</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$19.90</span>
                         </div>
                     </div>
@@ -537,7 +538,7 @@
                         </div>
                         <div class="product-content">
                             <button class="btn premium-btn">Premium</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
                             <span class="product-price">$1359.90</span>
                         </div>
                     </div>
@@ -560,8 +561,8 @@
                         </div>
                         <div class="product-content">
                             <button class="btn standard-btn">Standard</button>
-                            <span class="d-block product-title">Ragalia Space Suit Complete Set</span>
-                            <span class="product-price">15.90$</span>
+                            <a href="#" class="d-block product-title">Ragalia Space Suit Complete Set</a>
+                            <span class="product-price">$15.90</span>
                         </div>
                     </div>
                 </div>
@@ -571,37 +572,15 @@
         <!-- footer -->
         <footer class="footer">
             <div class="row">
-                <div class="col-lg-6">
+                <div class="col-sm-6">
                     <div class="footer-content">
                         <h2 class="footer-heading">Company</h2>
                         <a href="#">
                             <img src="./assets/images/logo.png" class="footer-logo">
                         </a>
-                        <p class="footer-about-company">Headquarters of the cluster organization: Nanoprogress, z.s.,
-                            Nova 306, 530 09 Pardubice Prague Office: Nanoprogress, z.s., Ukrajinska 1488/10, 101 00
-                            Praha 10</p>
-                        <p class="footer-detail">
-                            <i class="fa-solid fa-envelope contact-gmail"></i>abc@gmail.com
-                        </p>
-                        <p class="footer-detail">
-                            <i class="fa-solid fa-phone-flip contact-phone"></i>+01 335 633 77
-                        </p>
                     </div>
                 </div>
-                <div class="col-lg-3 mt-md-0 mt-5">
-                    <div class="footer-content">
-                        <h3 class="footer-heading">Useful Links</h3>
-                        <ul class="footer-list">
-                            <li class="footer-item"><a href="#" class="footer-link">About Us</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Contact Us</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Terms & Conditions</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Returns & Exchange</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Shipping & Delivery</a></li>
-                            <li class="footer-item"><a href="#" class="footer-link">Private Policy</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 mt-md-0 mt-5">
+                <div class="col-sm-6 mt-sm-0 mt-5 footer-follow d-flex justify-content-end">
                     <div class="footer-content">
                         <h3 class="footer-heading">Follow Us</h3>
                         <ul class="social-list">
